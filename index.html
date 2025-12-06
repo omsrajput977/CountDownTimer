@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Easy Countdown Timer — Notification + Audio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="card" role="application" aria-label="Countdown timer">
+            <div class="left">
+                <div class="circle" id="visual">
+                    <div>
+                        <div class="time" id="display">00:00</div>
+                        <div class="label-small" id="sub">Ready</div>
+                    </div>
+                </div>
+
+
+                <div class="controls">
+                    <button class="btn btn-start" id="startBtn">Start</button>
+                    <button class="btn btn-outline" id="pauseBtn">Pause</button>
+                    <button class="btn btn-outline" id="resetBtn">Reset</button>
+                </div>
+
+
+                <div class="progress-track">
+                    <div class="progress-bar" id="progress"></div>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <h1>Easy Countdown Timer</h1>
+                <p class="desc">Enter seconds or choose a preset. At the end you get a notification + alert sound.</p>
+
+
+                <div class="form-row">
+                    <input id="seconds" type="number" min="1" placeholder="Seconds" />
+                    <button class="btn btn-outline" id="setBtn">Set</button>
+                </div>
+
+
+                <div class="preset">
+                    <button data-sec="10">10s</button>
+                    <button data-sec="30">30s</button>
+                    <button data-sec="60">1m</button>
+                    <button data-sec="120">2m</button>
+                    <button data-sec="300">5m</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
